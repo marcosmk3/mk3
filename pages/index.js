@@ -20,6 +20,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
+        
         <title>MK3 Representações</title>
         <meta
           name="description"

@@ -176,6 +176,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 0 5px;
   }
+
   .portais{
     flex-direction: row;
     height: 100%;

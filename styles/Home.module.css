@@ -206,6 +206,7 @@
  
   .sobre p{
     font-size: .875rem;
+    line-height: 22px;
   }
   .mvv{
     display: flex;

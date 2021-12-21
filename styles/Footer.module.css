@@ -37,9 +37,10 @@
 
 .developer{
   display: inline;
-  font-family: Monument400;
+  font-family: var(--font-titulo);
   letter-spacing: 1.5px;
   color: #fff;
+  font-size: 1.2rem;
 }
 
 .developer:hover{
@@ -49,8 +50,10 @@
 @media screen and (max-width:1200px) {
   
   .footer{
-    min-height: 350px;
+    max-height: 200px;
     max-width: 100%;
+    padding: 0;
+
   }
 
   .footerContainer{
@@ -69,13 +72,21 @@
 }
 
 @media screen and (max-width:750px) {
-
+  .footerContainer ul{
+    display: none;
+  }
+  .nomeDev{
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    text-align: center;
+  }
   .footer{
-    max-height: 325px;
-    
+    max-height: 200px;
   }
   
   .footerContainer{
+    max-height: 200px;
     max-width: 400px;
     padding: 0 2rem;
     display: flex;
