@@ -197,13 +197,14 @@
 @media screen and (max-width:750px) {
   .sobre{
     margin-top: 50px;
+    padding: 0 2rem;
   }
   
   .sobre h3{
     max-width: 602px;
     height: 72px;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 20px;
   }
  
   .sobre p{
@@ -216,6 +217,7 @@
     align-items: center;
     margin-top: 50px;
     flex-direction: column;
+
   }
   
   .mvv div > div{
@@ -337,6 +339,7 @@
   
   .catalogo {
     margin-top: 50px;
+    padding: 0 2rem;
   }
 
   .catalogo h3{
@@ -391,6 +394,10 @@
 }
 
 @media screen and (max-width:320px){
+  .catalogo {
+    margin-top: 50px;
+    padding: 0 1rem;
+  }
   
   .catalogo div ul li{
     width: 90px;
@@ -424,6 +431,7 @@
     
   .representadas{
     margin-top: 50px;
+    padding: 0 2rem;
   }
 
   .representadas h3{
@@ -511,6 +519,7 @@
 @media screen and (max-width:1200px) {
   .mensagem{
     line-height: 1.5rem;
+
   }
   
 }
@@ -520,6 +529,8 @@
   .depoimentos{
     margin-top: 50px;
     background: var(--cor-primaria);
+    padding: 0 2rem;
+
   }
   
   .mensagem{
@@ -535,7 +546,7 @@
 
 }
 
-
+/* 
 .noticias{
   margin-top: 120px;
 }
@@ -627,7 +638,7 @@
     width: 100%;
   }
 
-}
+} */
 
 .faq{
   display: flex;
@@ -715,6 +726,7 @@
   
   .faq{
     margin-top: 50px;
+
   }
 
   .faq h3{
@@ -741,6 +753,7 @@
   .faq h4{
     font-size: 18px;
     line-height: 24px;
+    
   }
 
   .faq p{
@@ -748,6 +761,8 @@
     font-size: 14px;
     line-height: 20px;
     text-align: left;
+    padding: 0 1rem;
+
   }
 }
 
@@ -880,6 +895,7 @@ border-color: var(--cor-destaque);
   
   .contato{
     margin-top: 50px;
+    padding: 0 2rem;
   }
 
   .contato >div{
@@ -937,6 +953,15 @@ border-color: var(--cor-destaque);
   .contatoEndereco{
     text-align: center;
   }
+}
+
+
+@media screen and (max-width:320px) {
+  .contato{
+    margin-top: 50px;
+    padding: 0 1rem;
+  }
+
 }
 
 .contatoEndereco h2{
