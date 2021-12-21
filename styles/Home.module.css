@@ -278,12 +278,19 @@
 .catPapelaria{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+
+.catPapelaria a li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .catPapelaria div {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
   margin-bottom: 20px;
 }
 .catalogo div ul li{
