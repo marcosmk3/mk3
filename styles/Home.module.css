@@ -1,0 +1,945 @@
+
+.whatsappVerde{
+  position: fixed;
+  right: 5rem;
+  top: 80vh;
+}
+
+.introducaoImg{
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+
+}
+
+.introducao{
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+}
+
+.introducao div{
+  padding: 0 1rem;
+}
+
+
+.introducao span{
+  font-size: 3rem;
+  font-family:var(--font-titulo);
+  color: var(--cor-destaque);
+  font-weight: bolder;
+}
+
+.introducao p{
+  font-family: var(--fonte-pricipal);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  color: #1E1B1B;
+  opacity: 0.7;
+}
+
+@media screen and (max-width:1200px) {
+
+  .introducao{
+    max-width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  
+  .introducao div{
+    padding: 0 .5rem;
+  }
+  
+  
+  .introducao span{
+    font-size: 2rem;
+    font-family:var(--font-titulo);
+    color: var(--cor-destaque);
+    font-weight: bolder;
+  }
+  
+  .introducao p{
+    font-family: var(--fonte-pricipal);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1E1B1B;
+    opacity: 0.7;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width:750px) {
+  .whatsappVerde{
+    position: fixed;
+    right: 1rem;
+    top: 3.8rem;
+    z-index: 500;
+  }
+
+  .introducaoImg{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .introducao{
+    width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    display: none;
+  }
+  
+  .introducao div{
+    padding: .5rem;
+    width: 90px;
+  }
+  
+  .introducao span{
+    font-size: 1.2rem;
+  }
+  
+  .introducao p{
+    font-size: .875rem;
+    line-height: 14px;
+    letter-spacing: 0;
+  }
+}
+
+
+
+
+.sobre{
+  margin-top: 120px;
+}
+
+.sobre h3{
+  max-width: 602px;
+  height: 72px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.sobre span{
+  color: var(--cor-primaria);
+}
+
+.sobre p{
+  max-width: 593px;
+  height: 140px;
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #426666;
+}
+
+.mvv{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.mvv div > div{
+  display: flex;
+  align-items: center;
+}
+
+.mvv span {
+  font-family: var(--font-titulo);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  color: #5656DF;
+  margin-left: 24px;
+}
+
+.mvv p{
+  max-width: 288px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1E1B1B;
+  opacity: 0.6;
+}
+
+@media screen and (max-width:1200px) {
+  
+  .mvv span {
+    font-size: 16px;
+    line-height: 36px;
+    margin-left: 24px;
+  }
+  
+  .mvv p{
+    max-width: 240px;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  
+}
+
+@media screen and (max-width:750px) {
+  .sobre{
+    margin-top: 50px;
+  }
+  
+  .sobre h3{
+    max-width: 602px;
+    height: 72px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+ 
+  .sobre p{
+    font-size: .875rem;
+  }
+  .mvv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  
+  .mvv div > div{
+    display: flex;
+    align-items: center;
+  }
+  
+  .mvv span {
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 24px;
+  }
+  
+  .mvv p{
+    max-width: 288px;
+    font-size: 14px;
+    line-height: 150%;
+    opacity: .8;
+  }
+  
+}
+
+.catalogo {
+  margin-top: 90px;
+}
+
+.catalogo h3{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #1F1F26;
+}
+
+.catalogo p{
+  max-width: 585px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #426666;
+}
+
+.catalogo > div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+}
+
+.catalogo div div p{
+  font-size: 1.2rem;
+  color: var(--cor-destaque);
+  font-weight: 600;
+}
+
+.catalogo div ul{
+  list-style: none;
+  max-width: 600px;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.catPapelaria{
+  display: flex;
+  flex-direction: column;
+}
+
+.catPapelaria div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+.catalogo div ul li{
+  font-size: .8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid var(--cor-destaque);
+  border-radius: .5rem;
+  text-align: center;
+  width: 150px;
+  height: 45px;
+  margin-right: 5px;
+  padding: .2rem;
+}
+
+.catalogo div ul li:hover{
+  box-shadow: 1px 1px 10px #000
+}
+
+
+.catalogoInformatica ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:1200px) {
+  .catalogo > div{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:750px) {
+  
+  .catalogo {
+    margin-top: 50px;
+  }
+
+  .catalogo h3{
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .catalogo p{
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+  .catalogo > div{
+    grid-template-columns: 1fr;
+
+  }
+  .catalogo span{
+    font-size: 1.2rem;
+  }
+
+
+  .catalogo div ul{
+    list-style: none;
+    max-width: 600px;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  .catPapelaria{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .catPapelaria div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+  }
+
+  .catalogo div ul li{
+    font-size: .8rem;
+    width: 100px;
+    height: 80px;
+    padding: 5px 5px;
+    padding-top: 15px;
+  }
+
+}
+
+@media screen and (max-width:320px){
+  
+  .catalogo div ul li{
+    width: 90px;
+    padding: 2px;
+    padding-top: 15px;
+  }
+}
+
+.representadas{
+  margin-top: 110px;
+}
+
+.representadas h3{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #1F1F26;
+}
+
+.representadas > div > div{
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+}
+
+@media screen and (max-width:750px) {
+    
+  .representadas{
+    margin-top: 50px;
+  }
+
+  .representadas h3{
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .representadas > div > div{
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+  }
+
+}
+
+.depoimentos{
+  background: url('../public/fundo.png') no-repeat center;
+  background-size: cover;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 550px;
+}
+
+.depoimentos > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5rem;
+  margin: .2rem;
+  background-color: rgba(0, 0, 0, 0.301);
+  max-width: 500px;
+}
+
+.depimg{
+  margin-right: 20px;
+}
+
+.depimg img{
+  border-radius: 50%;
+}
+
+.depoimentos span{
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+
+.mensagem{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.8rem;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  max-width: 300px;
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-size: .875rem;
+
+}
+.depoimentos >div > div{
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  justify-content: center;
+}
+
+.depoimentos div >div >div{
+  align-self: flex-end;
+  font-size: 1rem;
+  width: 10px;
+}
+
+.depoimentos p{
+  color: #fff;
+  font-size: .875rem;
+}
+
+@media screen and (max-width:1200px) {
+  .mensagem{
+    line-height: 1.5rem;
+  }
+  
+}
+
+@media screen and (max-width:750px) {
+    
+  .depoimentos{
+    margin-top: 50px;
+    background: var(--cor-primaria);
+  }
+  
+  .mensagem{
+    line-height: 1.2rem;
+    max-width: 300px;
+    font-size: .875rem;
+  }
+
+
+  .depoimentos p{
+    color: #fff;
+  }
+
+}
+
+
+.noticias{
+  margin-top: 120px;
+}
+
+.noticias article{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.noticias article > div{
+  max-width: 400px;
+  margin: .5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.noticias article > div > div{
+  align-self: center;
+}
+
+.noticias article  img{
+  border-radius: .5rem;
+}
+.noticias article > div h1{
+  font-family: var(--font-titulo);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  color: #333333;
+  padding: 0 .5rem;
+}
+
+.noticias article > div p{
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.015em;
+  color: #333333;
+  opacity: 0.8;
+  align-self: center;
+  text-align: left;
+  margin-left: 28px;
+}
+
+@media screen and (max-width:1200px) {
+
+
+  .noticias article > div h1{
+    font-size: 18px;
+    line-height: 130%;
+  }
+  
+  .noticias article > div p{
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width:750px) {
+  
+  .noticias{
+    margin-top: 50px;
+  }
+
+  .noticias article{
+    flex-direction: column;
+  }
+
+  .noticias article > div{
+    width: 100%;
+    padding: .5rem;
+  }
+
+  .noticias article > div h1{
+    font-size: 18px;
+    line-height: 130%;
+    padding: 0 ;
+  }
+
+  .noticias article > div p{
+    font-size: 14px;
+    line-height: 130%;
+    align-self: flex-start;
+    text-align: start;
+    margin: 0;
+  }
+
+  .noticias article > div > div{
+    width: 100%;
+  }
+
+}
+
+.faq{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.faq h3{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #161E2E;
+  margin-bottom: 50px;
+}
+
+.faq dl{
+  align-self: center;
+
+}
+
+.faq dl > div{
+  border: 1px solid var(--cor-primaria);
+  border-radius: .5rem;
+  padding: 1.5rem 1rem;
+  margin: 1rem 0;
+  width: 688px;
+}
+
+
+.faq dt {
+  font-size: 16px;
+  line-height: 19px;
+  color: #4B5563;
+  border: none;
+  background: none;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq dt::after{
+  content: '✛';
+  display: inline-flex;
+
+}
+
+.faq dd{
+  margin-top: 18px;
+  max-width: 688px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: #4B5563;
+  display: none;
+}
+
+.faq a{
+  color: var(--cor-destaque);
+}
+
+
+
+.faq h4{
+  font-size: 24px;
+  line-height: 26px;
+  color: #161E2E;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.faq p{
+  width: 558px;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  align-self: center;
+}
+
+@media screen and (max-width:750px) {
+  
+  .faq{
+    margin-top: 50px;
+  }
+
+  .faq h3{
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .faq dl > div{
+    padding: .5rem;
+    margin: 1rem 0;
+    width: 300px;
+  }
+
+  .faq dd{
+    margin-top: 12px;
+    max-width: 300px;
+    font-size: 14px;
+    line-height: 20px;
+    display: none;
+  }
+
+
+  .faq h4{
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .faq p{
+    max-width: 300px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+  }
+}
+
+.contato{
+  margin-top: 150px;
+
+}
+
+.contato >div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+
+.contatoForm p{
+  font-size: 18px;
+  line-height: 28px;
+  color: #8692A6;
+}
+
+.contatoForm form{
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;
+}
+
+.contatoForm form > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  
+}
+
+.contatoForm form > div input{
+  width: 252px;
+
+}
+
+.contatoForm label{
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #696F79;
+  margin-bottom: 14px;
+  margin-top: 28px;
+
+}
+
+.contatoForm input{
+  height: 60px;
+  padding: 1rem;
+  left: 419px;
+  top: 5113px;
+  border: 1px solid #8692A6;
+  box-sizing: border-box;
+  border-radius: 6px;
+  outline: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+.contatoForm input:hover{
+border-color: var(--cor-destaque);
+}
+
+.contatoForm input:focus{
+  border-color: var(--cor-destaque);
+}
+
+.contatoForm textarea{
+  height: 110px;
+  border: 1px solid #8692A6;
+  box-sizing: border-box;
+  border-radius: 6px;
+  resize: none;
+  padding: 1rem;
+  outline: 0;
+  font-size: .9rem;
+
+}
+
+.contatoForm textarea:hover{
+  border-color: var(--cor-destaque);
+}
+  
+.contatoForm textarea:focus{
+  border-color: var(--cor-destaque);
+}
+
+.contatoForm button{
+  width: 522px;
+  height: 60px;
+  background: #FF5800;
+  border-radius: 6px;
+  margin-top: 32px;
+  font-size: 1rem;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.contatoForm button:hover{
+  box-shadow: .5px .5px 10px #000;
+}
+
+.contatoForm span{
+  font-size: 1.1rem;
+  padding-top: .5rem;
+}
+
+
+
+@media screen and (max-width:1200px) {
+  .contato >div{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .contatoForm p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width:750px) {
+  
+  .contato{
+    margin-top: 50px;
+  }
+
+  .contato >div{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+
+  .contatoForm p{
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .contatoForm form{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;  
+  }
+
+  .contatoForm form > div {
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    
+  }
+
+  .contatoForm form > div input{
+    width: 100%;
+  }
+
+  .contatoForm label{
+    margin-bottom: 8px;
+    margin-top: 20px;
+
+  }
+
+  .contatoForm input{
+    padding: .5rem;
+    border-radius: .5rem;
+    font-size: .875rem;
+  }
+
+  .contatoForm textarea{
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: .875rem;
+  }
+
+  .contatoForm button{
+    width: 100%;
+    border-radius: .5rem;
+  }
+
+  .contatoEndereco{
+    text-align: center;
+  }
+}
+
+.contatoEndereco h2{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.contatoEndereco p{
+  font-size: 16px;
+  line-height: 19px;
+  color: #426666;
+}
+
+.contatoredes{
+  margin-top: 1rem;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  align-items: flex-start;
+}

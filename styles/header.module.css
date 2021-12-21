@@ -1,0 +1,267 @@
+.portais{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.headerInfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-primaria);
+  color: #fff;
+  font-size: .875rem;
+  flex-wrap: wrap;
+
+}
+
+.headerContainer{
+  width: 1600px;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.headerContainer ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+  width: 100% ;
+}
+
+.headerContainer li {
+  margin-right: 20px;
+
+}
+
+.header li a {
+  padding: 5px;
+}
+
+
+.headerLi:hover {
+  background-color: #fff;
+  border-radius: .5rem;
+  padding: 5px;
+}
+
+.headerRedes {
+  display: flex;
+  align-items: center;
+
+}
+
+.headerRedes div{
+  margin-left: .5rem;
+  padding: .5rem;
+}
+
+
+.headerNav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+
+}
+
+.headerContainerNav{
+  width: 1600px;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerContainerNav > span {
+  display: none;
+  width: 35px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+}
+
+
+.menu div {
+  margin-right: 1rem;
+  padding: 1rem;
+
+  font-family: var(--font-titulo);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #09082F;
+}
+
+.menu div a:hover {
+  border-bottom: 2px solid var(--cor-destaque);
+}
+
+
+.buttonPortal{
+  padding: 12px 0;
+  border-radius: .5rem;
+  border: 2px solid var(--cor-destaque);
+  color: #fff;
+  background-color: var(--cor-destaque);
+  font-family: var(--font-primaria);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  width: 220px;
+  height: 50px;
+}
+
+.buttonPortal:hover{
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 1px 1px 10px #000;
+  transition: .2s;
+}
+
+.headerContainerNav span{
+  padding-left: 5px;
+}
+
+@media screen and ( max-width:1200px) {
+  .portais{
+    display: flex;
+    flex-direction: column;
+  }
+  .headerContainer ul{
+    flex-wrap: wrap;
+  }
+
+  .headerContainerNav{
+    width: 100%;
+    padding: 0 2rem;
+  }
+  
+  .menu div {
+    margin-right: .5rem;
+    padding: .5rem;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:750px) {
+    
+  .headerContainer{
+    width: 100%;
+    padding: 0 ;
+  }
+
+  .headerContainerNav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5px;
+  }
+  .portais{
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .headerContainerNav > span {
+    display: block;
+  }
+  
+  .headerContainer ul{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .headerContainer li {
+    margin-right: 0;
+    padding: 5px;
+  }
+
+  .headerContainerNav > span{
+    padding:20px;
+    position:fixed;
+    left:.4375rem;
+    top:4rem;
+    border:none;
+    cursor:pointer;
+    z-index: 200;
+  }
+
+  .menuButton{
+    display:block;
+    position:fixed;
+    left:.6375rem;
+    top:5.1875rem;
+    border:none;
+    cursor:pointer;
+    transition:1s;
+    width:30px;
+    background-color: var(--cor-destaque);
+    height:2px;
+    box-shadow:0 -8px var(--cor-destaque),0 8px var(--cor-destaque);
+    z-index:500;
+  }
+
+  .menu{
+    transition:1s;
+    display:none;
+    opacity:0;
+    background-color:var(--cor-secundaria);
+    max-width:8.25rem;
+    position:fixed;
+    top:2.125rem;
+    left:.3125rem;
+    border-radius:.5rem;
+    z-index:100;
+    padding-bottom: 20px;
+    padding-top: 60px;
+  }
+
+  .menu > div{
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu a{
+    text-decoration: none;
+    border: 2px solid transparent;
+  }
+
+
+  .buttonPortal{
+    font-size: .8rem;
+    width: 120px;
+  }
+
+  .buttonPortal span{
+    display: none;
+  }
+
+  .headerContainerNav span{
+    padding-left: 1px;
+  }
+
+}
+
+

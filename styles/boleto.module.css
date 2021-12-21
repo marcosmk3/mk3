@@ -1,0 +1,175 @@
+
+.boleto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+}
+
+.boleto h1{
+  text-align: center;
+}
+
+.buttonModal{
+  padding: 12px 0;
+  border-radius: .5rem;
+  border: 2px solid var(--cor-destaque);
+  color: #fff;
+  background-color: var(--cor-destaque);
+  font-family: var(--font-primaria);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  width: 220px;
+  height: 50px;
+}
+
+.buttonModal:hover{
+  box-shadow: 1px 1px 10px #000;
+
+}
+
+.representadasCont{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.boleto .representadas{
+  background-color: var(--cor-primaria);
+  color: rgba(255, 255, 255, 0.904);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .875rem;
+  font-weight: 700;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+
+}
+
+.boleto .representadas:hover{
+  box-shadow: .5px .5px 10px #000;
+}
+
+.boleto form{
+  display: none;
+  flex-direction: column;
+
+}
+
+.boleto form span{
+  padding: 10px;
+}
+
+.boleto form div{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.boleto label{
+  text-align: left;
+  display: block;
+  font-size: .875rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+
+.boleto input{
+  padding: .5rem;
+  border: 1px solid #8692A6;
+  background: none;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 350px;
+}
+
+.boleto input:hover{
+  border-color: var(--cor-destaque);
+}
+
+.boleto input:focus{
+  border-color: var(--cor-destaque);
+}
+
+.boleto button{
+  padding: .5rem;
+  width: 50%;
+  margin: 0 auto;
+  background-color: var(--cor-destaque);
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+.boleto button:hover{
+  box-shadow: .5px .5px 10px #000;
+}
+
+.boleto p {
+  font-size: 1.5rem;
+}
+
+
+@media screen and (max-width:750px) {
+
+  .boleto h1{
+    font-size: 1.5rem;
+  }
+
+  .buttonModal{
+    font-size: .8rem;
+    width: 110px;
+    margin-left: 5px;
+  }
+
+  .boleto .representadas{
+    margin: 10px;
+  }
+
+  .boleto form div{
+    margin-bottom: 5px;
+  }
+  
+  .boleto form{
+    display: none;
+    flex-direction: column;
+  }
+  
+  .boleto form span{
+    padding: 10px;
+  }
+
+  
+  .boleto label{
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .boleto input{
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100%;
+  }
+
+  .boleto button{
+    width: 100%;
+  }
+
+  .boleto p {
+    font-size: 1rem;
+  }
+} 
