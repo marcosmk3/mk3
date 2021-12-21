@@ -288,6 +288,12 @@
   justify-content: center;
 }
 
+.catalogoInformatica a li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .catPapelaria div {
   display: flex;
   justify-content: space-between;
@@ -365,13 +371,20 @@
   
   .catPapelaria div {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
   }
 
   .catalogo div ul li{
-    padding: 5px 5px;
+    padding: 5px;
+    width: 100px;
+    height: 60px;
   }
+
+  .catalogoInformatica ul li{
+    padding: 5px;
+    width: 100px;
+    height: 60px;
+  }
+
 
 }
 
