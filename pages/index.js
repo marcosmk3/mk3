@@ -22,6 +22,7 @@ export default function Home() {
       <Head>
         
         <title>MK3 Representações</title>
+        
         <meta
           name="description"
           content="MK3 é uma empresa de representação comercial que atua no ramo de Papelaria e Informática, com sede localizada em Araguaina - TO, atendemos todo o estado do Tocantins e região sul do estado do Pará."
