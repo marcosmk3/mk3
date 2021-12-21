@@ -366,16 +366,11 @@
   .catPapelaria div {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
     margin-bottom: 20px;
   }
 
   .catalogo div ul li{
-    font-size: .8rem;
-    width: 100px;
-    height: 80px;
     padding: 5px 5px;
-    padding-top: 15px;
   }
 
 }
