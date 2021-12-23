@@ -143,12 +143,16 @@ const header = () => {
                 Contato
               </a>
             </div>
-
           </div>
-          
+
           <div className={styles.portais}>
             <Modal />
-            <a href="https://mk3.suasvendas.com/#services" target="_blank" className={styles.buttonPortal} rel="noreferrer" >
+            <a
+              href="https://mk3.suasvendas.com/#services"
+              target="_blank"
+              className={styles.buttonPortal}
+              rel="noreferrer"
+            >
               Portal do cliente
               <span>
                 <Image src="/seta.svg" alt="mk3" width={20} height={10} />

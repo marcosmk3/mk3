@@ -15,14 +15,12 @@ import Depoimento from "./components/Depoimento";
 import Footer from "./components/Footer";
 import Slider from "./components/Slider";
 
-
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        
         <title>MK3 Representações</title>
-        
+
         <meta
           name="description"
           content="MK3 é uma empresa de representação comercial que atua no ramo de Papelaria e Informática, com sede localizada em Araguaina - TO, atendemos todo o estado do Tocantins e região sul do estado do Pará."

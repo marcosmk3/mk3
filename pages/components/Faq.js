@@ -60,9 +60,7 @@ const Faq = () => {
           </dt>
           <dd id="pergunta2">
             Basta clicar em 2ª via de boleto no menu localizado no topo do site,
-            ou clicando{" "}
-            <a href="#boleto">aqui</a>
-            .
+            ou clicando <a href="#boleto">aqui</a>.
           </dd>
         </div>
 

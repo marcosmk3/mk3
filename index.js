@@ -15,7 +15,6 @@ import Depoimento from "./components/Depoimento";
 import Footer from "./components/Footer";
 import Slider from "./components/Slider";
 
-
 export default function Home() {
   return (
     <div className={styles.container}>
