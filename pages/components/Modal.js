@@ -25,7 +25,6 @@ const Modal = () => {
     target.style.background = "var(--cor-destaque)";
     setRepresentada(target.id);
   }
-  console.log(representada);
 
   async function enviar(evt) {
     evt.preventDefault();
@@ -164,9 +163,9 @@ const Modal = () => {
                   </div>
 
                   <div>
-                    {/* <div onClick={mostrarForm} id="sac@riobranco.com.br" className={styles.representadas + " seletor" }>
+                    <div onClick={mostrarForm} id="cobrancamaxprint@riobranco.com.br" className={styles.representadas + " seletor" }>
                       MaxPrint
-                    </div> */}
+                    </div>
 
                     <Link
                       href={"https://app.mercur.com.br/portalcliente/login"}
@@ -189,9 +188,9 @@ const Modal = () => {
                       Off Paper
                     </div>
 
-                    {/* <div onClick={mostrarForm} id="valdisneidev@gmail.com" className={styles.representadas + " seletor" }>
+                    <div onClick={mostrarForm} id="jaqueline.financeiro@seanit.com" className={styles.representadas + " seletor" }>
                       Seanit
-                    </div> */}
+                    </div>
 
                     <Link href={"https://saodomingos.ind.br/boleto/"}>
                       <a target="_blank" rel="noreferrer">

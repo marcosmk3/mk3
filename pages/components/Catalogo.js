@@ -111,6 +111,12 @@ const Catalogo = () => {
                 <li>MaxPrint</li>
               </a>
             </Link>
+
+            <Link href={"/catalogos/riobranco.pdf"} passHref>
+              <a target="_blank">
+                <li>Rio Branco</li>
+              </a>
+            </Link>
           </ul>
         </div>
       </div>
