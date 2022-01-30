@@ -3,16 +3,6 @@ import Image from "next/image";
 import styles from "../../styles/Home.module.css";
 
 const SlideDepoimento = () => {
-  // const slide = [
-  //   {mensagem:'Gostaria de parabeniza-los pelo profissionalismo! Empresa séria e comprometida em atender bem seus clientes, estamos muito satisfeitos. Abraço da equipe ABC',
-  //   autor:'Douglas Mirante - ABC Palpelaria'
-  //   },
-  //   {
-  //     mensagem:'2222222222222 Gostaria de parabeniza-los pelo profissionalismo! Empresa séria e comprometida em atender bem seus clientes, estamos muito satisfeitos. Abraço da equipe ABC',
-  //     autor:'Douglas Mirante - ABC Palpelaria'
-  //   }
-  // ]
-
   return (
     <section className={styles.depoimentos}>
       <div className="cont">

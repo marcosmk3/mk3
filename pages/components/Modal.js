@@ -173,7 +173,7 @@ const Modal = () => {
                       <a target="_blank" rel="noreferrer">
                         <div
                           onClick={mostrarForm}
-                          className={styles.representadas}
+                          className={styles.representadas + " seletor"}
                         >
                           Mercur
                         </div>
