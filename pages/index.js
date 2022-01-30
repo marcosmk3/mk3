@@ -19,6 +19,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
+      <meta name="google-site-verification" content="gucJiVQFLxDh1RCYY08NNgpc3PMQYsV_Nwexfd-KJAM" />
         <title>MK3 Representações</title>
 
         <meta
