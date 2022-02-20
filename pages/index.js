@@ -6,7 +6,6 @@ import Header from "./components/Header";
 import Introducao from "./components/Introducao";
 import Sobre from "./components/Sobre";
 import Mvv from "./components/Mvv";
-import Catalogo from "./components/Catalogo";
 import Representadas from "./components/Representadas";
 // import Noticias from './components/Noticias'
 import Faq from "./components/Faq";
@@ -64,7 +63,6 @@ export default function Home() {
         <Introducao />
         <Sobre />
         <Mvv />
-        <Catalogo />
         <Representadas />
         <Depoimento />
         {/* <Noticias       /> */}

@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
-
 }
 
 .boleto h1{
@@ -35,32 +34,22 @@
 .representadasCont{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .boleto .representadas{
-  background-color: var(--cor-primaria);
-  color: rgba(255, 255, 255, 0.904);
   text-align: center;
-  text-transform: uppercase;
-  font-size: .875rem;
-  font-weight: 700;
-  border-radius: .5rem;
-  margin-bottom: 1rem;
+  margin: 2rem;
   cursor: pointer;
-  width: 100px;
-  height: 50px;
-  margin: 10px;
-
-}
-
-.boleto .representadas:hover{
-  box-shadow: .5px .5px 10px #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 50px;
 }
 
 .boleto form{
   display: none;
   flex-direction: column;
-
 }
 
 .boleto form span{
@@ -137,7 +126,7 @@
   }
 
   .boleto .representadas{
-    margin: 10px;
+    margin: 50px;
   }
 
   .boleto form div{

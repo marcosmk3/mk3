@@ -1,0 +1,49 @@
+
+
+.catalogoCont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 200;
+  flex-direction: column;
+  padding:2rem;
+  color: #000;
+}
+.catalogoCont p {
+  max-width: 600px;
+
+}
+
+.catalogoCont span {
+  font-size: 1.5rem;
+
+}
+
+.catPapelaria {
+  text-align: center;
+  width: 100%;
+}
+
+.catPapelaria span{
+  background-color: var(--cor-destaque);
+  padding: .5rem;
+  border-radius:.5rem;
+}
+
+
+.catPapelaria ul{
+  list-style: none;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.catPapelaria ul li{
+  width: 100px;
+  margin: 20px;
+
+}
+
+

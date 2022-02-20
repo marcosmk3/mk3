@@ -4,6 +4,18 @@ import Script from "next/script";
 import { useState } from "react";
 import styles from "../../styles/boleto.module.css";
 import Link from "next/link";
+import Image from 'next/image'
+
+import MaxPrint from '../../public/marcas/marca1.png'
+import Off_Paper from '../../public/marcas/marca2.png'
+import Compactor from '../../public/marcas/marca3.png'
+import Seanit from '../../public/marcas/marca4.png'
+import Mercur from '../../public/marcas/marca5.png'
+import Bacchi from '../../public/marcas/marca6.png'
+import ACP from '../../public/marcas/marca7.png'
+import SD from '../../public/marcas/marca8.png'
+import Adere from '../../public/marcas/adere.png'
+import Acrimet from '../../public/marcas/acrimet.png'
 
 const Modal = () => {
   const [email, setEmail] = useState("");
@@ -16,18 +28,23 @@ const Modal = () => {
   function mostrarForm({ target }) {
     const form = document.querySelector("#form");
     form.style.display = "flex";
-
-    const seletor = document.querySelectorAll(".seletor");
-    seletor.forEach((item) => {
-      item.style.background = "var(--cor-primaria)";
-    });
-
-    target.style.background = "var(--cor-destaque)";
-    setRepresentada(target.id);
   }
 
   async function enviar(evt) {
     evt.preventDefault();
+    fetch("/api/boletomk3/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email,
+        razao,
+        cnpj,
+        nf,
+      }),
+    })
 
     fetch("/api/boleto/contact", {
       method: "POST",
@@ -62,6 +79,8 @@ const Modal = () => {
       setLoad("");
       window.location.href = "/";
     }, 5000);
+
+
   }
   return (
     <div id="boleto">
@@ -123,7 +142,7 @@ const Modal = () => {
                       id="gisele@acrimet.com.br"
                       className={styles.representadas + " seletor"}
                     >
-                      Acrimet
+                      <Image src={Acrimet} alt='Acrimet'/>
                     </div>
 
                     <div
@@ -131,7 +150,7 @@ const Modal = () => {
                       id="contasareceber@acpplasticos.com.br"
                       className={styles.representadas + " seletor"}
                     >
-                      ACP
+                      <Image src={ACP} alt='ACP'/>
                     </div>
 
                     <Link
@@ -141,7 +160,7 @@ const Modal = () => {
                       passHref
                     >
                       <a target="_blank" rel="noreferrer">
-                        <div className={styles.representadas}>Adere</div>
+                        <div className={styles.representadas}> <Image src={Adere} alt='Adere'/></div>
                       </a>
                     </Link>
 
@@ -150,7 +169,7 @@ const Modal = () => {
                       id="grampos.adm@uol.com.br"
                       className={styles.representadas + " seletor"}
                     >
-                      Bacchi
+                      <Image src={Bacchi}  alt='Bacchi'/>
                     </div>
 
                     <div
@@ -158,13 +177,13 @@ const Modal = () => {
                       id="contasareceber@compactor.com.br"
                       className={styles.representadas + " seletor"}
                     >
-                      Compactor
+                      <Image src={Compactor} alt='Compactor'/>
                     </div>
                   </div>
 
                   <div>
                     <div onClick={mostrarForm} id="cobrancamaxprint@riobranco.com.br" className={styles.representadas + " seletor" }>
-                      MaxPrint
+                      <Image src={MaxPrint} alt='MaxPrint'/>
                     </div>
 
                     <Link
@@ -175,7 +194,7 @@ const Modal = () => {
                           onClick={mostrarForm}
                           className={styles.representadas + " seletor"}
                         >
-                          Mercur
+                          <Image src={Mercur} alt='Mercur'/>
                         </div>
                       </a>
                     </Link>
@@ -185,16 +204,17 @@ const Modal = () => {
                       id="adm2@papeisoffpaper.com.br"
                       className={styles.representadas + " seletor"}
                     >
-                      Off Paper
+                       <Image src={Off_Paper} alt='Off Paper'/>
                     </div>
 
                     <div onClick={mostrarForm} id="jaqueline.financeiro@seanit.com" className={styles.representadas + " seletor" }>
-                      Seanit
+                    <Image src={Seanit} alt='Seanit'/>
                     </div>
 
                     <Link href={"https://saodomingos.ind.br/boleto/"}>
                       <a target="_blank" rel="noreferrer">
-                        <div className={styles.representadas}>São Domingos</div>
+                        <div className={styles.representadas}> <Image src={SD} alt='São Domingos'/>
+                        </div>
                       </a>
                     </Link>
                   </div>

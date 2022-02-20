@@ -3,6 +3,8 @@ import styles from "../../styles/header.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Modal from "./Modal";
+import Catalogo from "./Catalogo"
+
 
 const header = () => {
   function initMenuMobile() {
@@ -123,8 +125,8 @@ const header = () => {
               </a>
             </div>
             <div>
-              <a href="#catalogo" onClick={handleClick}>
-                Catálagos
+              <a href="#" >
+                {/* <Catalogo /> */}
               </a>
             </div>
 
@@ -146,6 +148,10 @@ const header = () => {
           </div>
 
           <div className={styles.portais}>
+            <div className={styles.catalogoButton}>
+              <Catalogo />
+            </div>
+
             <Modal />
             <a
               href="https://mk3.suasvendas.com/#services"

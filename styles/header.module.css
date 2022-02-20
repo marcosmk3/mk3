@@ -1,7 +1,22 @@
 .portais{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: .5rem;
+}
+
+.catalogoButton{
+  padding: 12px 0;
+  border-radius: .5rem;
+  border: 2px solid var(--cor-destaque);
+  color: #fff;
+  background-color: var(--cor-destaque);
+  font-family: var(--font-primaria);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  width: 220px;
+  height: 50px;
 }
 
 .header{
@@ -137,6 +152,13 @@
   transition: .2s;
 }
 
+.catalogoButton:hover{
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 1px 1px 10px #000;
+  transition: .2s;
+}
+
 .headerContainerNav span{
   padding-left: 5px;
 }
@@ -251,6 +273,10 @@
 
 
   .buttonPortal{
+    font-size: .8rem;
+    width: 120px;
+  }
+  .catalogoButton{
     font-size: .8rem;
     width: 120px;
   }
