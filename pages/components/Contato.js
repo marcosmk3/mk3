@@ -135,7 +135,7 @@ const Contato = () => {
           <h2>Endereço</h2>
           <p>
             {" "}
-            R. das Jaboticabeiras, 122 - Lot. Araguaina Sul, Araguaína - TO
+            R. das Jaboticabeiras, 122 - Lot. Araguaína Sul, Araguaína - TO
           </p>
 
           <div>

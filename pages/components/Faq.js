@@ -87,7 +87,7 @@ const Faq = () => {
           </dt>
           <dd id="pergunta4">
             Para compras a prazo, é necessário passar por uma análise de
-            crédito, mediate o primeiro pedido feito conosco.
+            crédito, mediante o primeiro pedido feito conosco.
           </dd>
         </div>
 

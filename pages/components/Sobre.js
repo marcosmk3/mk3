@@ -11,7 +11,7 @@ const Sobre = () => {
       </h3>
       <p>
         MK3 é uma empresa de representação comercial que atua no ramo de
-        Papelaria e Informática.com sede localizada em Araguaina - TO, atendemos
+        Papelaria e Informática. Com sede localizada em Araguaína - TO, atendemos
         todo o estado do Tocantins e região sul do estado do Pará.
       </p>
     </section>

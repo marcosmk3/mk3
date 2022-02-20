@@ -1,5 +1,3 @@
-
-
 .catalogoCont{
   display: flex;
   align-items: center;
@@ -9,6 +7,7 @@
   flex-direction: column;
   padding:2rem;
   color: #000;
+  cursor: default;
 }
 
 .catalogoCont h3 {
