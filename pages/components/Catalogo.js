@@ -60,7 +60,7 @@ const Catalogo = () => {
               </p>
             
               <div className={styles.catPapelaria}>
-                <span>Papelaria</span>
+                <div className={styles.titulo}>Papelaria</div>
                 
                 <ul >
                   
@@ -131,7 +131,7 @@ const Catalogo = () => {
               </div>
 
               <div className={styles.catPapelaria}>
-                <span>Informática</span>
+                <div className={styles.titulo}>Informática</div>
                 
                 <ul>
                   <Link href={"/catalogos/maxprint.pdf"} passHref>
