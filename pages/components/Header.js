@@ -148,9 +148,8 @@ const header = () => {
           </div>
 
           <div className={styles.portais}>
-            <div className={styles.catalogoButton}>
-              <Catalogo />
-            </div>
+            
+            <Catalogo />
 
             <Modal />
             <a

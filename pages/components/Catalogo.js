@@ -6,22 +6,22 @@ import styles from "../../styles/catalogo.module.css";
 import Head from "next/head";
 import Script from "next/script";
 
-import MaxPrint from '../../public/marcas/marca1.png'
 import Off_Paper from '../../public/marcas/marca2.png'
 import Compactor from '../../public/marcas/marca3.png'
-import Seanit from '../../public/marcas/marca4.png'
 import Mercur from '../../public/marcas/marca5.png'
 import Bacchi from '../../public/marcas/marca6.png'
 import ACP from '../../public/marcas/marca7.png'
-import SD from '../../public/marcas/marca8.png'
 import Adere from '../../public/marcas/adere.png'
 import Acrimet from '../../public/marcas/acrimet.png'
 import riobranco from '../../public/marcas/riobranco.png'
+import Seanit from './modalCatalogoSeanit'
+import SaoDomingos from './modalCatalogoSd'
+import Maxprint from './modalCatalogoMaxprint'
 
 const Catalogo = () => {
   return (
     
-    <section>
+    <section className={styles.catalogoButton}>
       <Script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -36,8 +36,8 @@ const Catalogo = () => {
           crossOrigin="anonymous"
         />
       </Head>
-
-      <a  data-toggle="modal" data-target=".bd-example-modal-xl" >Catálogos</a>
+      
+      <a  data-toggle="modal" data-target=".bd-example-modal-xl">Catálogos</a>
 
       <div className="modal fade bd-example-modal-xl" tabIndex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
         <div className="modal-dialog modal-xl">
@@ -101,32 +101,14 @@ const Catalogo = () => {
                       <li><Image src={Off_Paper} alt='Off Paper'/></li>
                     </a>
                   </Link>
-                  <Link href={"/catalogos/seanit.pdf"} passHref>
-                    <a target="_blank">
-                      <li><Image src={Seanit} alt='Seanit'/></li>
-                    </a>
-                  </Link>
-                  <Link href={"/catalogos/seanit_malas_camping.pdf"} passHref>
-                    <a target="_blank">
-                      <li><Image src={Seanit} alt='Seanit'/> Malas</li>
-                    </a>
-                  </Link>
+                  <li style={{cursor:'poiter'}}>
+                    <Seanit/>
+                  </li>
 
-                  <Link href={"/catalogos/sd_cadernos.pdf"} passHref>
-                    <a target="_blank">
-                      <li><Image src={SD} alt='São Domingos Cadernos'/> Cadernos</li>
-                    </a>
-                  </Link>
-                  <Link href={"/catalogos/sd_impressos.pdf"} passHref>
-                    <a target="_blank">
-                      <li><Image src={SD} alt='São Domingos Impressos'/> Impressos</li>
-                    </a>
-                  </Link>
-                  <Link href={"/catalogos/sd_planners_agendas.pdf"} passHref>
-                    <a target="_blank">
-                      <li><Image src={SD} alt='São Domingos Planners e agendas'/> Agendas</li>
-                    </a>
-                  </Link>
+                  <li>
+                    <SaoDomingos />
+                  </li>
+
                 </ul>
               </div>
 
@@ -134,11 +116,9 @@ const Catalogo = () => {
                 <div className={styles.titulo}>Informática</div>
                 
                 <ul>
-                  <Link href={"/catalogos/maxprint.pdf"} passHref>
-                    <a target="_blank">
-                      <li><Image src={MaxPrint} alt='Maxprint'/></li>
-                    </a>
-                  </Link>
+                  <li>
+                    <Maxprint />
+                  </li>
 
                   <Link href={"/catalogos/riobranco.pdf"} passHref>
                     <a target="_blank">
