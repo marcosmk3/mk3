@@ -87,7 +87,7 @@ const header = () => {
                     rel="noreferrer"
                     passHref
                   >
-                    <a target="_blank" rel="noreferrer">
+                    <a target="_blank" rel="noreferrer" >
                       <Image
                         src="/icons/facebook-branco.png"
                         alt="facebook mk3 representações"

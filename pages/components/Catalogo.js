@@ -37,7 +37,7 @@ const Catalogo = () => {
         />
       </Head>
       
-      <a  data-toggle="modal" data-target=".bd-example-modal-xl">Catálogos</a>
+      <a  data-toggle="modal" data-target=".bd-example-modal-xl" className='butao'>Catálogos</a>
 
       <div className="modal fade bd-example-modal-xl" tabIndex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
         <div className="modal-dialog modal-xl">
@@ -101,11 +101,11 @@ const Catalogo = () => {
                       <li><Image src={Off_Paper} alt='Off Paper'/></li>
                     </a>
                   </Link>
-                  <li style={{cursor:'poiter'}}>
+                  <li style={{cursor:'pointer'}}>
                     <Seanit/>
                   </li>
 
-                  <li>
+                  <li style={{cursor:'pointer'}}>
                     <SaoDomingos />
                   </li>
 
@@ -116,7 +116,7 @@ const Catalogo = () => {
                 <div className={styles.titulo}>Informática</div>
                 
                 <ul>
-                  <li>
+                  <li style={{cursor:'pointer'}}>
                     <Maxprint />
                   </li>
 

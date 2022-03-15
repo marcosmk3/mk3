@@ -72,9 +72,10 @@
   font-size: 16px !important;
   text-align: center !important;
   cursor: pointer !important;
-  width: 210px !important;
-  height: 50px !important;
+  width: 210px ;
+  height: 50px ;
 }
+
 
 
 .catalogoButton:hover{
@@ -82,4 +83,12 @@
 
 }
 
+@media screen and (max-width:750px) {
+  .catalogoButton{
+    width: 120px ;
+    height: 50px ;
+  }
+
+  
+}
 

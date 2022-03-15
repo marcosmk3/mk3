@@ -56,6 +56,17 @@ const Maxprint = () => {
                   </li>
                 </a>
               </Link>
+              <Link href={"/catalogos/dazz.pdf"} passHref>
+                <a target='_blank'>
+                  <li>
+                    <div className={styles.opcaoCatalogo}>
+                      <Image src={Max} alt='dazz' />
+                      <p>Dazz</p>
+                    </div>
+                  </li>
+
+                </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -105,3 +105,19 @@ a {
     transform:initial
   }
 }
+
+
+
+.butao {
+  width: 100% ;
+  height: 100% ;
+  padding: 14px 50px;
+}
+
+@media screen and (max-width: 750px) {
+  .butao{
+    width: auto ;
+    height: auto ;
+    padding: 14px 20px;
+  }
+}
