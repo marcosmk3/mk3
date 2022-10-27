@@ -1,16 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import styles from '../../../styles/catalogo.module.css'
+import styles from "../../../styles/catalogo.module.css";
 
 import Head from "next/head";
 import Script from "next/script";
 
-import Max from '../../../public/marcas/marca1.png'
+import Max from "../../../public/marcas/marca1.png";
 
 const Maxprint = () => {
   return (
-
     <section>
       <Script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -27,46 +26,80 @@ const Maxprint = () => {
         />
       </Head>
 
-      <a data-toggle="modal" data-target=".bd-example-modal-xl4" ><Image src={Max} alt='Seanit' /></a>
+      <a data-toggle="modal" data-target=".bd-example-modal-xl4">
+        <Image src={Max} alt="Seanit" />
+      </a>
 
-      <div className="modal fade bd-example-modal-xl4" tabIndex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div
+        className="modal fade bd-example-modal-xl4"
+        tabIndex="-1"
+        role="dialog"
+        aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true"
+      >
         <div className="modal-dialog modal-xl">
           <div className="modal-content">
             <div className={styles.contOpcao}>
-
               <Link href={"/catalogos/maxprint.pdf"} passHref>
-                <a target='_blank'>
+                <a target="_blank">
                   <li>
                     <div className={styles.opcaoCatalogo}>
-                      <Image src={Max} alt='Maxprint' />
+                      <Image src={Max} alt="Maxprint" />
                       <p>Informática</p>
                     </div>
                   </li>
-
                 </a>
               </Link>
 
-              <Link href={"/catalogos/maxprint_cadeiras.pdf"} passHref>
-                <a target='_blank'>
+              <Link
+                href={
+                  "https://drive.google.com/file/d/18smunUDEw5MQVSbP03I6xtEMdiIxN2Ah/view?usp=sharing"
+                }
+                passHref
+              >
+                <a target="_blank">
                   <li>
                     <div className={styles.opcaoCatalogo}>
-                      <Image src={Max} alt='Maxprint' />
+                      <Image src={Max} alt="Maxprint" />
                       <p>Cadeiras office</p>
                     </div>
                   </li>
                 </a>
               </Link>
-              <Link href={"/catalogos/dazz.pdf"} passHref>
-                <a target='_blank'>
-                  <li>
-                    <div className={styles.opcaoCatalogo}>
-                      <Image src={Max} alt='dazz' />
-                      <p>Dazz</p>
-                    </div>
-                  </li>
-
-                </a>
-              </Link>
+              <li>
+                <div className={styles.opcaoCatalogo}>
+                  <Image src={Max} alt="dazz" />
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "baseline",
+                      width: "200px",
+                    }}
+                  >
+                    <Link
+                      href={
+                        "https://drive.google.com/file/d/1TOn3CFdeYxzxl_aFpeCc_MVbVK8eMjvV/view?usp=sharing"
+                      }
+                      passHref
+                    >
+                      <a target="_blank">
+                        <p>Dazz</p>
+                      </a>
+                    </Link>
+                    <Link
+                      href={
+                        "https://drive.google.com/file/d/16M9pRh_X8AJILKqbouaeGOGBIfA7KwhW/view?usp=sharingf"
+                      }
+                      passHref
+                    >
+                      <a target="_blank">
+                        <p>Cadeiras Marvel</p>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </li>
             </div>
           </div>
         </div>
@@ -93,10 +126,7 @@ const Maxprint = () => {
         strategy="beforeInteractive"
       />
     </section>
-
   );
-
-
 };
 
 export default Maxprint;

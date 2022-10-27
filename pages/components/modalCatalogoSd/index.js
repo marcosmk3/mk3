@@ -1,16 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import styles from '../../../styles/catalogo.module.css'
+import styles from "../../../styles/catalogo.module.css";
 
 import Head from "next/head";
 import Script from "next/script";
 
-import SD from '../../../public/marcas/marca8.png'
+import SD from "../../../public/marcas/marca8.png";
 
 const SaoDomingos = () => {
   return (
-    
     <section>
       <Script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -27,46 +26,67 @@ const SaoDomingos = () => {
         />
       </Head>
 
-      <a  data-toggle="modal" data-target=".bd-example-modal-xl3" ><Image src={SD} alt='Seanit'/></a>
+      <a data-toggle="modal" data-target=".bd-example-modal-xl3">
+        <Image src={SD} alt="Seanit" />
+      </a>
 
-      <div className="modal fade bd-example-modal-xl3" tabIndex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div
+        className="modal fade bd-example-modal-xl3"
+        tabIndex="-1"
+        role="dialog"
+        aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true"
+      >
         <div className="modal-dialog modal-xl">
           <div className="modal-content">
-					<div className={styles.contOpcao}>
+            <div className={styles.contOpcao}>
+              <Link
+                href={
+                  "https://drive.google.com/file/d/1iMz13jvywbHCP9ZN02csi4O3I1AiQ1hW/view?usp=sharing"
+                }
+                passHref
+              >
+                <a target="_blank">
+                  <li>
+                    <div className={styles.opcaoCatalogo}>
+                      <Image src={SD} alt="São Domingos Cadernos" />
+                      <p>Cadernos</p>
+                    </div>
+                  </li>
+                </a>
+              </Link>
+              <Link
+                href={
+                  "https://drive.google.com/file/d/1i_rNGj1nfmVcVFlOhNpd3pHH4-Bi5dhf/view?usp=sharing"
+                }
+                passHref
+              >
+                <a target="_blank">
+                  <li>
+                    <div className={styles.opcaoCatalogo}>
+                      <Image src={SD} alt="São Domingos Impressos" />
+                      <p>Impressos</p>
+                    </div>
+                  </li>
+                </a>
+              </Link>
 
-						<Link href={"/catalogos/sd_cadernos.pdf"} passHref>
-							<a target="_blank">
-								<li>
-									<div className={styles.opcaoCatalogo}>
-                    <Image src={SD} alt='São Domingos Cadernos'/>
-										<p>Cadernos</p>
-									</div>
-								</li>
-							</a>
-						</Link>
-						<Link href={"/catalogos/sd_impressos.pdf"} passHref>
-							<a target="_blank">
-								<li>
-									<div className={styles.opcaoCatalogo}>
-                    <Image src={SD} alt='São Domingos Impressos'/> 
-										<p>Impressos</p>
-									</div>
-								</li>
-							</a>
-						</Link>
-
-            <Link href={"/catalogos/sd_planners_agendas.pdf"} passHref>
-              <a target="_blank">
-                <li>
-									<div className={styles.opcaoCatalogo}>
-                    <Image src={SD} alt='São Domingos Planners e agendas'/> 
-                    <p>Planners e Agendas</p>
-                  </div>
-                </li>
-              </a>
-            </Link>
-
-					</div>
+              <Link
+                href={
+                  "https://drive.google.com/file/d/1vkvapOzmwL_J0xEX1mcUxqmM-VvILATU/view?usp=sharing"
+                }
+                passHref
+              >
+                <a target="_blank">
+                  <li>
+                    <div className={styles.opcaoCatalogo}>
+                      <Image src={SD} alt="São Domingos Planners e agendas" />
+                      <p>Planners e Agendas</p>
+                    </div>
+                  </li>
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -92,10 +112,7 @@ const SaoDomingos = () => {
         strategy="beforeInteractive"
       />
     </section>
-    
   );
-
-  
 };
 
 export default SaoDomingos;

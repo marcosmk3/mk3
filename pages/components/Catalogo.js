@@ -6,21 +6,20 @@ import styles from "../../styles/catalogo.module.css";
 import Head from "next/head";
 import Script from "next/script";
 
-import Off_Paper from '../../public/marcas/marca2.png'
-import Compactor from '../../public/marcas/marca3.png'
-import Mercur from '../../public/marcas/marca5.png'
-import Bacchi from '../../public/marcas/marca6.png'
-import ACP from '../../public/marcas/marca7.png'
-import Adere from '../../public/marcas/adere.png'
-import Acrimet from '../../public/marcas/acrimet.png'
-import riobranco from '../../public/marcas/riobranco.png'
-import Seanit from './modalCatalogoSeanit'
-import SaoDomingos from './modalCatalogoSd'
-import Maxprint from './modalCatalogoMaxprint'
+import Off_Paper from "../../public/marcas/marca2.png";
+import Compactor from "../../public/marcas/marca3.png";
+import Mercur from "../../public/marcas/marca5.png";
+import Bacchi from "../../public/marcas/marca6.png";
+import ACP from "../../public/marcas/marca7.png";
+import Adere from "../../public/marcas/adere.png";
+import Acrimet from "../../public/marcas/acrimet.png";
+import riobranco from "../../public/marcas/riobranco.png";
+import Seanit from "./modalCatalogoSeanit";
+import SaoDomingos from "./modalCatalogoSd";
+import Maxprint from "./modalCatalogoMaxprint";
 
 const Catalogo = () => {
   return (
-    
     <section className={styles.catalogoButton}>
       <Script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -36,93 +35,159 @@ const Catalogo = () => {
           crossOrigin="anonymous"
         />
       </Head>
-      
-      <a  data-toggle="modal" data-target=".bd-example-modal-xl" className='butao'>Catálogos</a>
 
-      <div className="modal fade bd-example-modal-xl" tabIndex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <a
+        data-toggle="modal"
+        data-target=".bd-example-modal-xl"
+        className="butao"
+      >
+        Catálogos
+      </a>
+
+      <div
+        className="modal fade bd-example-modal-xl"
+        tabIndex="-1"
+        role="dialog"
+        aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true"
+      >
         <div className="modal-dialog modal-xl">
           <div className="modal-content">
-          <div className={styles.catalogoCont}>
+            <div className={styles.catalogoCont}>
               <button
                 type="button"
                 className="close"
                 data-dismiss="modal"
                 aria-label="Fechar"
-                style={{position: "absolute", right: "30px", top: "30px"}}
+                style={{ position: "absolute", right: "30px", top: "30px" }}
               >
                 <span aria-hidden="true">&times;</span>
               </button>
               <h3>Mais de 3 mil itens disponíveis</h3>
               <p>
-                Trabalhamos apenas com produtos exclusivos para atendermos sempre de
-                forma diferenciada, moderna e de qualidade, confira os nossos produtos
-                para o ramo de Papelaria e Informática.
+                Trabalhamos apenas com produtos exclusivos para atendermos
+                sempre de forma diferenciada, moderna e de qualidade, confira os
+                nossos produtos para o ramo de Papelaria e Informática.
               </p>
-            
+
               <div className={styles.catPapelaria}>
                 <div className={styles.titulo}>Papelaria</div>
-                
-                <ul >
-                  
-                  <Link href={"/catalogos/acrimet.pdf"} passHref>
+
+                <ul>
+                  <Link
+                    href={
+                      "https://drive.google.com/file/d/1qwfsaJnMifwPCA3UxUs39vceZuBWVtLS/view?usp=sharing"
+                    }
+                    passHref
+                  >
                     <a target="_blank">
-                      <li><Image src={Acrimet} alt='Acrimet'/></li>
+                      <li>
+                        <Image src={Acrimet} alt="Acrimet" />
+                      </li>
                     </a>
                   </Link>
-                  <Link href={"/catalogos/acp.pdf"} passHref>
+                  <Link
+                    href={
+                      "https://drive.google.com/file/d/1LkomwoG9MC4tN5vcYHAQaudRnovSCjRn/view?usp=sharing"
+                    }
+                    passHref
+                  >
                     <a target="_blank">
-                      <li><Image src={ACP} alt='ACP'/></li>
+                      <li>
+                        <Image src={ACP} alt="ACP" />
+                      </li>
                     </a>
                   </Link>
-                  <Link href={"/catalogos/adere.pdf"} passHref>
+                  <Link
+                    href={
+                      "https://drive.google.com/file/d/1RGQtCWNNgvfjHjrf9ePowKTCWSXcD68y/view?usp=sharing"
+                    }
+                    passHref
+                  >
                     <a target="_blank">
-                      <li><Image src={Adere} alt='Adere'/></li>
+                      <li>
+                        <Image src={Adere} alt="Adere" />
+                      </li>
                     </a>
                   </Link>
 
-                  <Link href={"/catalogos/bacchi.pdf"} passHref>
+                  <Link
+                    href={
+                      "https://drive.google.com/file/d/1q6rJSMOcpYYH5LjhPKFU2FJG6FS-ubmQ/view?usp=sharing"
+                    }
+                    passHref
+                  >
                     <a target="_blank">
-                      <li><Image src={Bacchi} alt='Bacchi'/></li>
+                      <li>
+                        <Image src={Bacchi} alt="Bacchi" />
+                      </li>
                     </a>
                   </Link>
-                  <Link href={"/catalogos/compactor.pdf"} passHref>
+                  <Link
+                    href={
+                      "https://drive.google.com/file/d/1ZGVch73hOK3YwIWQ2IsXXZbyrFssZIEa/view?usp=sharing"
+                    }
+                    passHref
+                  >
                     <a target="_blank">
-                      <li><Image src={Compactor} alt='Compactor'/></li>
+                      <li>
+                        <Image src={Compactor} alt="Compactor" />
+                      </li>
                     </a>
                   </Link>
-                  <Link href={"/catalogos/mercur.pdf"} passHref>
+                  <Link
+                    href={
+                      "https://drive.google.com/file/d/1bSzaVbchYI4UIbe9A8IaFttvvXqxCbgm/view?usp=sharing"
+                    }
+                    passHref
+                  >
                     <a target="_blank">
-                      <li><Image src={Mercur} alt='Mercur'/></li>
+                      <li>
+                        <Image src={Mercur} alt="Mercur" />
+                      </li>
                     </a>
                   </Link>
 
-                  <Link href={"/catalogos/offpaper.pdf"} passHref>
+                  <Link
+                    href={
+                      "https://drive.google.com/file/d/1sToKTjBRXCTQ5UZ9JTn9b5aoOkq-znR1/view?usp=sharing"
+                    }
+                    passHref
+                  >
                     <a target="_blank">
-                      <li><Image src={Off_Paper} alt='Off Paper'/></li>
+                      <li>
+                        <Image src={Off_Paper} alt="Off Paper" />
+                      </li>
                     </a>
                   </Link>
-                  <li style={{cursor:'pointer'}}>
-                    <Seanit/>
+                  <li style={{ cursor: "pointer" }}>
+                    <Seanit />
                   </li>
 
-                  <li style={{cursor:'pointer'}}>
+                  <li style={{ cursor: "pointer" }}>
                     <SaoDomingos />
                   </li>
-
                 </ul>
               </div>
 
               <div className={styles.catPapelaria}>
                 <div className={styles.titulo}>Informática</div>
-                
+
                 <ul>
-                  <li style={{cursor:'pointer'}}>
+                  <li style={{ cursor: "pointer" }}>
                     <Maxprint />
                   </li>
 
-                  <Link href={"/catalogos/riobranco.pdf"} passHref>
+                  <Link
+                    href={
+                      "https://drive.google.com/file/d/1bwxDuRNF8m-qHE6oFDm9RfxCxd5T2tt0/view?usp=sharing"
+                    }
+                    passHref
+                  >
                     <a target="_blank">
-                      <li><Image src={riobranco} alt='Rio Branco'/></li>
+                      <li>
+                        <Image src={riobranco} alt="Rio Branco" />
+                      </li>
                     </a>
                   </Link>
                 </ul>
@@ -153,10 +218,7 @@ const Catalogo = () => {
         strategy="beforeInteractive"
       />
     </section>
-    
   );
-
-  
 };
 
 export default Catalogo;
