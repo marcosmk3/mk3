@@ -40,7 +40,12 @@ const Maxprint = () => {
         <div className="modal-dialog modal-xl">
           <div className="modal-content">
             <div className={styles.contOpcao}>
-              <Link href={"/catalogos/maxprint.pdf"} passHref>
+              <Link
+                href={
+                  "https://drive.google.com/file/d/1YxfHdV7gfkdI-6PPexNgHXIRlWZvr5Rq/view?usp=share_link"
+                }
+                passHref
+              >
                 <a target="_blank">
                   <li>
                     <div className={styles.opcaoCatalogo}>
