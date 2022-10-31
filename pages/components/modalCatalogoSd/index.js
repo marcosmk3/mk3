@@ -40,12 +40,8 @@ const SaoDomingos = () => {
         <div className="modal-dialog modal-xl">
           <div className="modal-content">
             <div className={styles.contOpcao}>
-              <Link
-                href={
-                  "https://drive.google.com/file/d/1iMz13jvywbHCP9ZN02csi4O3I1AiQ1hW/view?usp=sharing"
-                }
-                passHref
-              >
+              {/* CADERNOS */}
+              <Link href={"/catalogos/SAO-DOMINGOS/sd_cadernos.pdf"} passHref>
                 <a target="_blank">
                   <li>
                     <div className={styles.opcaoCatalogo}>
@@ -55,12 +51,9 @@ const SaoDomingos = () => {
                   </li>
                 </a>
               </Link>
-              <Link
-                href={
-                  "https://drive.google.com/file/d/1i_rNGj1nfmVcVFlOhNpd3pHH4-Bi5dhf/view?usp=sharing"
-                }
-                passHref
-              >
+
+              {/* IMPRESSOS */}
+              <Link href={"/catalogos/SAO-DOMINGOS/sd_impressos.pdf"} passHref>
                 <a target="_blank">
                   <li>
                     <div className={styles.opcaoCatalogo}>
@@ -71,10 +64,9 @@ const SaoDomingos = () => {
                 </a>
               </Link>
 
+              {/* PLANNERS E AGENDAS */}
               <Link
-                href={
-                  "https://drive.google.com/file/d/1vkvapOzmwL_J0xEX1mcUxqmM-VvILATU/view?usp=sharing"
-                }
+                href={"/catalogos/SAO-DOMINGOS/sd_planners_agendas.pdf"}
                 passHref
               >
                 <a target="_blank">

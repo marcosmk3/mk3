@@ -2,13 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../../styles/catalogo.module.css";
-
 import Head from "next/head";
 import Script from "next/script";
+import dazz from "../../../public/marcas/dazz.png";
 
-import Seanit from "../../../public/marcas/marca4.png";
-
-const Catalogo = () => {
+const Dazz = () => {
   return (
     <section>
       <Script
@@ -26,12 +24,12 @@ const Catalogo = () => {
         />
       </Head>
 
-      <a data-toggle="modal" data-target=".bd-example-modal-xl2">
-        <Image src={Seanit} alt="Seanit" />
+      <a data-toggle="modal" data-target=".bd-example-modal-xl5">
+        <Image src={dazz} alt="Dazz" width={80} height={70} />
       </a>
 
       <div
-        className="modal fade bd-example-modal-xl2"
+        className="modal fade bd-example-modal-xl5"
         tabIndex="-1"
         role="dialog"
         aria-labelledby="myExtraLargeModalLabel"
@@ -40,32 +38,28 @@ const Catalogo = () => {
         <div className="modal-dialog modal-xl">
           <div className="modal-content">
             <div className={styles.contOpcao}>
-              {/* PAPELARIA */}
-              <Link href={"/catalogos/SEANIT/seanit.pdf"} passHref>
-                <a target="_blank">
-                  <li>
-                    <div className={styles.opcaoCatalogo}>
-                      <Image src={Seanit} alt="seanit" />
-                      <p>Papelaria</p>
-                    </div>
-                  </li>
-                </a>
-              </Link>
-
-              {/* MALAS E CAMPING */}
-              <Link
-                href={"/catalogos/SEANIT/seanit_malas_camping.pdf"}
-                passHref
-              >
-                <a target="_blank">
-                  <li>
-                    <div className={styles.opcaoCatalogo}>
-                      <Image src={Seanit} alt="seanit" />
-                      <p>Malas e Camping</p>
-                    </div>
-                  </li>
-                </a>
-              </Link>
+              <div className={styles.opcaoCatalogo}>
+                <Image src={dazz} alt="dazz" width={100} height={100} />
+                <div>
+                  {/* DAZZ */}
+                  <Link href={"./catalogos/DAZZ/dazz.pdf"} passHref>
+                    <a target="_blank">
+                      <p>Dazz</p>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+              <div className={styles.opcaoCatalogo}>
+                <Image src={dazz} alt="dazz" width={100} height={100} />
+                <div>
+                  {/* CADEIRAS MARVEL */}
+                  <Link href={"./catalogos/DAZZ/dazzMarvel.pdf"} passHref>
+                    <a target="_blank">
+                      <p>Cadeiras Marvel</p>
+                    </a>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -95,4 +89,4 @@ const Catalogo = () => {
   );
 };
 
-export default Catalogo;
+export default Dazz;
