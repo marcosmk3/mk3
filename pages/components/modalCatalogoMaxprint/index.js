@@ -40,12 +40,8 @@ const Maxprint = () => {
         <div className="modal-dialog modal-xl">
           <div className="modal-content">
             <div className={styles.contOpcao}>
-              <Link
-                href={
-                  "https://drive.google.com/file/d/1YxfHdV7gfkdI-6PPexNgHXIRlWZvr5Rq/view?usp=share_link"
-                }
-                passHref
-              >
+              {/* INFORMÁTICA */}
+              <Link href={"/catalogos/MAXPRINT/maxprint.pdf"} passHref>
                 <a target="_blank">
                   <li>
                     <div className={styles.opcaoCatalogo}>
@@ -55,13 +51,8 @@ const Maxprint = () => {
                   </li>
                 </a>
               </Link>
-
-              <Link
-                href={
-                  "https://drive.google.com/file/d/18smunUDEw5MQVSbP03I6xtEMdiIxN2Ah/view?usp=sharing"
-                }
-                passHref
-              >
+              {/* CADEIRAS OFFICE */}
+              <Link href={"/catalogos/MAXPRINT/maxprint_cadeiras.pdf"} passHref>
                 <a target="_blank">
                   <li>
                     <div className={styles.opcaoCatalogo}>
@@ -71,40 +62,6 @@ const Maxprint = () => {
                   </li>
                 </a>
               </Link>
-              <li>
-                <div className={styles.opcaoCatalogo}>
-                  <Image src={Max} alt="dazz" />
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "baseline",
-                      width: "200px",
-                    }}
-                  >
-                    <Link
-                      href={
-                        "https://drive.google.com/file/d/1TOn3CFdeYxzxl_aFpeCc_MVbVK8eMjvV/view?usp=sharing"
-                      }
-                      passHref
-                    >
-                      <a target="_blank">
-                        <p>Dazz</p>
-                      </a>
-                    </Link>
-                    <Link
-                      href={
-                        "https://drive.google.com/file/d/16M9pRh_X8AJILKqbouaeGOGBIfA7KwhW/view?usp=sharingf"
-                      }
-                      passHref
-                    >
-                      <a target="_blank">
-                        <p>Cadeiras Marvel</p>
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </li>
             </div>
           </div>
         </div>

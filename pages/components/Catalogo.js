@@ -17,6 +17,7 @@ import riobranco from "../../public/marcas/riobranco.png";
 import Seanit from "./modalCatalogoSeanit";
 import SaoDomingos from "./modalCatalogoSd";
 import Maxprint from "./modalCatalogoMaxprint";
+import Dazz from "./modalCatalogoDazz";
 
 const Catalogo = () => {
   return (
@@ -74,36 +75,26 @@ const Catalogo = () => {
                 <div className={styles.titulo}>Papelaria</div>
 
                 <ul>
-                  <Link
-                    href={
-                      "https://drive.google.com/file/d/1qwfsaJnMifwPCA3UxUs39vceZuBWVtLS/view?usp=sharing"
-                    }
-                    passHref
-                  >
+                  {/* ACRIMET */}
+                  <Link href={"/catalogos/acrimet.pdf"} passHref>
                     <a target="_blank">
                       <li>
                         <Image src={Acrimet} alt="Acrimet" />
                       </li>
                     </a>
                   </Link>
-                  <Link
-                    href={
-                      "https://drive.google.com/file/d/1LkomwoG9MC4tN5vcYHAQaudRnovSCjRn/view?usp=sharing"
-                    }
-                    passHref
-                  >
+
+                  {/* ACP */}
+                  <Link href={"/catalogos/acp.pdf"} passHref>
                     <a target="_blank">
                       <li>
                         <Image src={ACP} alt="ACP" />
                       </li>
                     </a>
                   </Link>
-                  <Link
-                    href={
-                      "https://drive.google.com/file/d/1RGQtCWNNgvfjHjrf9ePowKTCWSXcD68y/view?usp=sharing"
-                    }
-                    passHref
-                  >
+
+                  {/* ADERE */}
+                  <Link href={"/catalogos/adere.pdf"} passHref>
                     <a target="_blank">
                       <li>
                         <Image src={Adere} alt="Adere" />
@@ -111,36 +102,26 @@ const Catalogo = () => {
                     </a>
                   </Link>
 
-                  <Link
-                    href={
-                      "https://drive.google.com/file/d/1q6rJSMOcpYYH5LjhPKFU2FJG6FS-ubmQ/view?usp=sharing"
-                    }
-                    passHref
-                  >
+                  {/* BACCHI */}
+                  <Link href={"/catalogos/bacchi.pdf"} passHref>
                     <a target="_blank">
                       <li>
                         <Image src={Bacchi} alt="Bacchi" />
                       </li>
                     </a>
                   </Link>
-                  <Link
-                    href={
-                      "https://drive.google.com/file/d/1ZGVch73hOK3YwIWQ2IsXXZbyrFssZIEa/view?usp=sharing"
-                    }
-                    passHref
-                  >
+
+                  {/* COMPACTOR */}
+                  <Link href={"/catalogos/compactor.pdf"} passHref>
                     <a target="_blank">
                       <li>
                         <Image src={Compactor} alt="Compactor" />
                       </li>
                     </a>
                   </Link>
-                  <Link
-                    href={
-                      "https://drive.google.com/file/d/1bSzaVbchYI4UIbe9A8IaFttvvXqxCbgm/view?usp=sharing"
-                    }
-                    passHref
-                  >
+
+                  {/* MERCUR */}
+                  <Link href={"/catalogos/mercur.pdf"} passHref>
                     <a target="_blank">
                       <li>
                         <Image src={Mercur} alt="Mercur" />
@@ -148,22 +129,21 @@ const Catalogo = () => {
                     </a>
                   </Link>
 
-                  <Link
-                    href={
-                      "https://drive.google.com/file/d/1sToKTjBRXCTQ5UZ9JTn9b5aoOkq-znR1/view?usp=sharing"
-                    }
-                    passHref
-                  >
+                  {/* OFF PAPER */}
+                  <Link href={"/catalogos/offpaper.pdf"} passHref>
                     <a target="_blank">
                       <li>
                         <Image src={Off_Paper} alt="Off Paper" />
                       </li>
                     </a>
                   </Link>
+
+                  {/* SEANIT */}
                   <li style={{ cursor: "pointer" }}>
                     <Seanit />
                   </li>
 
+                  {/* SAO DOMINGUS */}
                   <li style={{ cursor: "pointer" }}>
                     <SaoDomingos />
                   </li>
@@ -174,16 +154,17 @@ const Catalogo = () => {
                 <div className={styles.titulo}>Informática</div>
 
                 <ul>
+                  {/* MAXPRINT */}
                   <li style={{ cursor: "pointer" }}>
                     <Maxprint />
                   </li>
 
-                  <Link
-                    href={
-                      "https://drive.google.com/file/d/1bwxDuRNF8m-qHE6oFDm9RfxCxd5T2tt0/view?usp=sharing"
-                    }
-                    passHref
-                  >
+                  <li style={{ cursor: "pointer" }}>
+                    <Dazz />
+                  </li>
+
+                  {/* RIO BRANCO */}
+                  <Link href={"/catalogos/riobranco.pdf"} passHref>
                     <a target="_blank">
                       <li>
                         <Image src={riobranco} alt="Rio Branco" />

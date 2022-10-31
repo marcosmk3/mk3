@@ -1,11 +1,11 @@
-.catalogoCont{
+.catalogoCont {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   z-index: 200;
   flex-direction: column;
-  padding:2rem;
+  padding: 2rem;
   color: #000;
   cursor: default;
 }
@@ -17,40 +17,38 @@
   max-width: 600px;
 }
 
-.catPapelaria{
+.catPapelaria {
   width: 100%;
 }
 
-.titulo{
+.titulo {
   background-color: var(--cor-destaque);
-  border-radius:.5rem;
+  border-radius: 0.5rem;
   font-size: 1.5rem;
   color: #fff;
-  width:100%;
+  width: 100%;
 }
 
-.catPapelaria ul{
+.catPapelaria ul {
   list-style: none;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.catPapelaria ul li{
+.catPapelaria ul li {
   width: 150px;
   margin: 20px;
-
 }
 
-.contOpcao{
+.contOpcao {
   display: flex;
   align-items: baseline;
   justify-content: space-evenly;
-
 }
 
-.opcaoCatalogo{
+.opcaoCatalogo {
   display: block;
   margin: 0 auto;
 }
@@ -61,9 +59,9 @@
   font-family: var(--font-titulo);
 }
 
-.catalogoButton{
+.catalogoButton {
   padding: 12px 0 !important;
-  border-radius: .5rem !important;
+  border-radius: 0.5rem !important;
   border: 2px solid var(--cor-destaque) !important;
   color: #fff !important;
   background-color: var(--cor-destaque) !important;
@@ -72,23 +70,17 @@
   font-size: 16px !important;
   text-align: center !important;
   cursor: pointer !important;
-  width: 210px ;
-  height: 50px ;
+  width: 210px;
+  height: 50px;
 }
 
-
-
-.catalogoButton:hover{
+.catalogoButton:hover {
   box-shadow: 1px 1px 10px #000;
-
 }
 
-@media screen and (max-width:750px) {
-  .catalogoButton{
-    width: 120px ;
-    height: 50px ;
+@media screen and (max-width: 750px) {
+  .catalogoButton {
+    width: 120px;
+    height: 50px;
   }
-
-  
 }
-
